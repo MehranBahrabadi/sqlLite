@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/flower_image"
+        android:src="@drawable/armeria_allicaea"
+        android:scaleType="fitXY"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flower_name"
+        android:layout_toRightOf="@id/flower_image"
+        android:text="Ameria Allicaea"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/icon_more"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flower_category"
+        android:layout_below="@id/flower_name"
+        android:layout_alignLeft="@id/flower_name"
+        android:text="test category"
+        android:textSize="16sp"
+        android:textColor="#5E5D5D"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/flower_price"
+        android:layout_alignParentRight="true"
+        android:text="15.99 $"
+        android:layout_alignBottom="@id/flower_image"
+        android:textColor="@color/purple_700"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_more"
+        android:src="@drawable/ic_more"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:rotation="90"/>
+
+</RelativeLayout>
